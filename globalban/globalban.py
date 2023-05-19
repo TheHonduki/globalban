@@ -306,7 +306,7 @@ class BanSync(commands.Cog):
                         try:
                             bans = [b.user for b in await server.bans()]
                             if member not in bans:
-                                await member.send('You have been banned from all {} servers for {} because of the reason: {}.'.format('Gaming For Life', bantime_string, reason))
+                                await member.send('You have been banned from all {} servers for {} because of the reason: {}.'.format('Florida Roleplay', bantime_string, reason))
                                 await server.ban(member, delete_message_days=0)
                                 successful += 1
                                 print('before')
